@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body style="background-color: black;">
     <nav>
@@ -29,7 +30,7 @@
     </audio>
 
     <h1 class="title" style="color: rgb(255, 255, 255);">¿Qué Son los eSports de Valorant?</h1>
-    <p lass="info" style="color: aliceblue;">Los eSports de Valorant representan la vertiente competitiva del juego, donde equipos de élite y jugadores individuales se enfrentan 
+    <p class=".outline" style="color: aliceblue;">Los eSports de Valorant representan la vertiente competitiva del juego, donde equipos de élite y jugadores individuales se enfrentan 
     en torneos y ligas a nivel regional e internacional. Estos eventos no solo destacan la habilidad y estrategia de los participantes, sino que también atraen a una audiencia global 
     entusiasta por la emoción y el espectáculo del juego.</p>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/Mbig_wE2EXo?si=32cArB1Q9gCNA2lj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -64,15 +65,61 @@
 <br>
 <br>
 
-<label style="color: aliceblue;" for="Equipo" >Te parecen interesantes los partidos eSports?</label>
-<select name="Equipos" id="Equipos">
-    <option value="Si">Si</option>
-    <option value="No">No</option>
-</select>
-<br>
-<br>
- <label style="color: aliceblue;" for="nombre">Cual es tu equipo favorito?</label>
- <input type="text">
+<form action="" style="color: aliceblue;">
+    <fieldset>
+        <h2>Formulario para inscripción a los eSports</h2>
+       
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre">
+        <br><br>
+        
+        <label for="edad">Edad:</label>
+        <input type="number" name="edad" id="edad">
+        <br><br>
+
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email">
+        <br><br>
+       
+        <label for="genero">¿Cuál es tu género?</label>
+        <select name="genero" id="genero">
+            <option value="Hombre">Hombre</option>
+            <option value="Mujer">Mujer</option>
+        </select>
+        <br><br>
+       
+        <label for="tel">Teléfono:</label>
+        <input type="tel" name="tel" id="tel">
+        <br><br>
+
+        <label for="fecha">Fecha de nacimiento:</label>
+        <input type="date" name="fecha" id="fecha">
+        <br><br>
+
+        <label for="nombre2">¿Cuál es tu equipo favorito?</label>
+        <input type="text" name="nombre2" id="nombre2">
+        <br><br>
+
+        <label for="rango">¿Cuál es tu rango?</label>
+        <select name="rango" id="rango">
+            <option value="1">Hierro</option>
+            <option value="2">Bronce</option>
+            <option value="3">Plata</option>
+            <option value="4">Oro</option>
+            <option value="5">Platino</option>
+            <option value="6">Diamante</option>
+            <option value="7">Ascendente</option>
+            <option value="8">Inmortal</option>
+            <option value="9">Radiante</option>
+        </select>
+        <br><br>
+        
+        <button type="submit" name="enviar" id="btnsumit">Enviar</button>
+    </fieldset>
+</form>
+
+<script src="Evidencia2.js"></script>
+
 
  <footer style="color: aliceblue;">
     <h3 hidden>Derechos de Autor</h3>
@@ -81,4 +128,4 @@
         </address>
 </footer>
 </body>
-</html>s
+</html>
